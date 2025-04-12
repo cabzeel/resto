@@ -1,0 +1,84 @@
+.app__slider-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  overflow: hidden; /* Keep this */
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slider-images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Fixed arrow styles */
+.arrow {
+  position: absolute;
+  
+  transform: translateY(-50%);
+  z-index: 100; /* Increased z-index */
+  background: var(--color-primary);
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 50px; /* Added fixed width */
+  height: 50px; /* Added fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow:hover {
+  color: var(--color-button-text);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.left-arrow {
+  left: 0;
+  top: 14px;
+}
+
+.right-arrow {
+  right: 0;
+  bottom: -24px;
+}
+
+/* Ensure arrows stay visible on all screens */
+@media (max-width: 768px) {
+  .arrow {
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .left-arrow {
+    left: 15px;
+  }
+  
+  .right-arrow {
+    right: 15px;
+  }
+}

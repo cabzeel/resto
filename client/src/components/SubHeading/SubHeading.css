@@ -1,0 +1,9 @@
+.sub__heading {
+  text-align: center;
+}
+
+.sub__heading p {
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+}

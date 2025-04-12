@@ -1,0 +1,48 @@
+.app__aboutPage {
+  position: relative;
+}
+
+.app__aboutPage-content {
+  width: 100%;
+  z-index: 2;
+  margin-bottom: 2rem;
+}
+
+.app__aboutPage-content_about {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: right;
+}
+
+.app__aboutPage-content_knife img {
+  max-width: 100%; 
+  width: auto; 
+  object-fit: contain;
+  height: 750px;
+}
+
+.app__aboutPage-content_history {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+.app__aboutPage-content_history p,
+.app__aboutPage-content_about p {
+  margin: 2rem 0;
+}
+
+
+
+@media screen  and (max-width: 900px) {
+  .app__aboutPage-content {
+        flex-direction: column;
+  }
+
+}

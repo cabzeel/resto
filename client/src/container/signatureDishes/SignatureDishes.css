@@ -1,0 +1,56 @@
+.signatureDishes {
+  display: block;
+  margin: 0 auto;
+}
+
+.signatureDishes h1 {
+  margin-bottom: 20px;
+}
+
+.signatureDishes__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+}
+
+.signatureDishes__container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  max-width: 350px;
+}
+
+.signatureDishes__container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.card p {
+  font-size: 0.8rem;
+}
+
+.card div {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+  color: var(--color-accent);
+}

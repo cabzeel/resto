@@ -1,0 +1,136 @@
+.app__footer {
+  background: var(--color-footer-bg);
+
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer__about, .footer__newsletter, .footer__nav {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 1.5rem;
+
+}
+
+.footer__about img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+
+}
+
+.footer__about h3 {
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+
+.footer__about .open__hours {
+  display: flex;
+  gap: .9rem;
+  margin-bottom: 1rem;
+}
+
+.open__hours h5 {
+  font-size: .9rem;
+  font-family: var(--font-heading);
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__nav-item {
+  transition: .3s ease-in-out;
+}
+
+.footer__nav-item:hover {
+  color: var(--color-accent);
+}
+
+
+
+.footer__newsletter h3 {
+  margin-bottom: 1rem;
+}
+
+.footer__newsletter input {
+  padding: 0.75rem;
+  outline: none;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-border);
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+  background: var(--color-footer-bg);
+}
+
+
+@media screen and (max-width: 768px) {
+  .app__footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .footer__about,
+  .footer__nav,
+  .footer__newsletter {
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+  }
+
+  .footer__about .open__hours {
+    justify-content: center;
+  }
+
+  .footer__nav {
+    align-items: center;
+  }
+
+  .footer__newsletter input {
+    max-width: 100%;
+  }
+}
+
+/* Small screens (mobile) */
+@media screen and (max-width: 480px) {
+  .app__footer {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .footer__about,
+  .footer__nav,
+  .footer__newsletter {
+    min-width: 100%;
+  }
+
+  .footer__about img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer__about h3,
+  .footer__newsletter h3 {
+    font-size: 1.1rem;
+  }
+}
